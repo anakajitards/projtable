@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./App.css";
 import imagem from "./assets/snaplogo.jpeg";
 
@@ -24,13 +25,13 @@ export default function Login() {
 
           <input type="password" placeholder="Digite sua senha" />
 
-          <a href="/listagem">
-          <button>ENTRAR</button>
-          </a>
+          <Link to="/listagem">
+            <button>ENTRAR</button>
+          </Link>
 
-          <a href="/cadastro">
+          <Link to="/cadastro" className="link">
             Não possui conta? Cadastre-se
-          </a>
+          </Link>
 
         </div>
       </div>

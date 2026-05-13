@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./App.css";
 import imagem from "./assets/snaplogo.jpeg";
 
@@ -37,9 +38,9 @@ export default function Cadastro() {
 
           <button>CADASTRAR</button>
 
-          <a href="/">
+          <Link to="/" className="link">
             Já possui conta? Entrar
-          </a>
+          </Link>
 
         </div>
       </div>
